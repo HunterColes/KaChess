@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.14)
 
-project(CaChess)
+project(KaChess)
 
 # Find includes in corresponding build directories
 set(CMAKE_INCLUDE_CURRENT_DIR ON)

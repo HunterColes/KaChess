@@ -8,9 +8,11 @@ project(Board VERSION 0.3)
 
 set(Sources
 #src/${PROJECT_NAME}/example.cpp
+src/${PROJECT_NAME}/board.cpp
 )
 set(Headers
 #include/${PROJECT_NAME}/example.h 
+include/${PROJECT_NAME}/board.h 
 )
 
 #EXPORT CMAKE

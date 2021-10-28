@@ -12,4 +12,4 @@ src/${PROJECT_NAME}/main.cpp
 set(Headers
 )
 add_executable(${PROJECT_NAME} ${Headers} ${Sources})
-target_link_libraries(${PROJECT_NAME} PUBLIC Qt6::Widgets Qt6::Core Qt6::Gui)
+target_link_libraries(${PROJECT_NAME} PUBLIC Qt6::Widgets Qt6::Core Qt6::Gui Chess::Board)

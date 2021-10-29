@@ -2,6 +2,7 @@
 #include <QMainWindow>
 #include <include/Board/board.h>
 #include <QPushButton>
+#include <QLayout>
 
 int main(int argc, char* argv[])
 {
@@ -19,7 +20,9 @@ int main(int argc, char* argv[])
     exitButton->setText("Close program");
     exitButton->move(0, 420);
 
-    Board* b = new Board();
+    
+    Board* b = new Board(exitButton);
+    Board* c = new Board(b);
 
     button1->connect(button1, SIGNAL(clicked()), b, SLOT(sayHi()));
     exitButton->connect(button1, SIGNAL(clicked()), b, SLOT(close()));

@@ -3,13 +3,17 @@
 
 #include <QWidget>
 #include <QDebug>
+#include <qscopedpointer.h>
+#include <qpushbutton.h>
 
 class Board : public QWidget
 {
 	Q_OBJECT
 public:
-	Board();
+	Board(QWidget* p = nullptr);
 	~Board();
+	void draw();
+
 
 protected:
 
@@ -19,6 +23,7 @@ public Q_SLOTS:
 Q_SIGNALS:
 
 private:
+	QScopedPointer<QPushButton> button;
 };
 
 #endif //BOARD_H
